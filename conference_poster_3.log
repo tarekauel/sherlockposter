@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.10)  27 JAN 2016 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.12.10)  3 FEB 2016 19:37
 entering extended mode
 **conference_poster_3.tex
 (conference_poster_3.tex
@@ -494,33 +494,440 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
 Package: relsize 2003/07/04 ver 3.1
-) (conference_poster_3.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip69
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks29
+\ex@=\dimen190
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen191
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count126
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count127
+\leftroot@=\count128
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count129
+\DOTSCASE@=\count130
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box44
+\strutbox@=\box45
+\big@size=\dimen192
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count131
+\c@MaxMatrixCols=\count132
+\dotsspace@=\muskip10
+\c@parentequation=\count133
+\dspbrk@lvl=\count134
+\tag@help=\toks30
+\row@=\count135
+\column@=\count136
+\maxfields@=\count137
+\andhelp@=\toks31
+\eqnshift@=\dimen193
+\alignsep@=\dimen194
+\tagshift@=\dimen195
+\tagwidth@=\dimen196
+\totwidth@=\dimen197
+\lineht@=\dimen198
+\@envbody=\toks32
+\multlinegap=\skip70
+\multlinetaggap=\skip71
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks34
+\thm@bodyfont=\toks35
+\thm@headfont=\toks36
+\thm@notefont=\toks37
+\thm@headpunct=\toks38
+\thm@preskip=\skip72
+\thm@postskip=\skip73
+\thm@headsep=\skip74
+\dth@everypar=\toks39
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\algorithm2e\algorithm2e.sty"
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count138
+\algocf@hangindent=\skip75
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+********************************************************
+Package `algorithm2e' Release 5.1 -- october 19 2015 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (christophe.fiorio@umontpellier.fr)
+********************************************************
+\skiptotal=\skip76
+\skiplinenumber=\skip77
+\skiprule=\skip78
+\skiphlne=\skip79
+\skiptext=\skip80
+\skiplength=\skip81
+\algomargin=\skip82
+\skipalgocfslide=\skip83
+\algowidth=\dimen199
+\inoutsize=\dimen200
+\inoutindent=\dimen201
+\interspacetitleruled=\dimen202
+\interspacealgoruled=\dimen203
+\interspacetitleboxruled=\dimen204
+\algocf@ruledwidth=\skip84
+\algocf@inoutbox=\box46
+\algocf@inputbox=\box47
+\AlCapSkip=\skip85
+\AlCapHSkip=\skip86
+\algoskipindent=\skip87
+\algocf@nlbox=\box48
+\algocf@hangingbox=\box49
+\algocf@untilbox=\box50
+\algocf@skipuntil=\skip88
+\algocf@capbox=\box51
+\algoheightruledefault=\skip89
+\algoheightrule=\skip90
+\algotitleheightruledefault=\skip91
+\algotitleheightrule=\skip92
+\c@algocfline=\count139
+\c@algocfproc=\count140
+\c@algocf=\count141
+\algocf@algoframe=\box52
+\algocf@algobox=\box53
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count142
+\lst@gtempboxa=\box54
+\lst@token=\toks40
+\lst@length=\count143
+\lst@currlwidth=\dimen205
+\lst@column=\count144
+\lst@pos=\count145
+\lst@lostspace=\dimen206
+\lst@width=\dimen207
+\lst@newlines=\count146
+\lst@lineno=\count147
+\lst@maxwidth=\dimen208
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count148
+\lst@skipnumbers=\count149
+\lst@framebox=\box55
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip93
+\subfigcapskip=\skip94
+\subfigcaptopadj=\dimen209
+\subfigbottomskip=\skip95
+\subfigcapmargin=\dimen210
+\subfiglabelskip=\skip96
+\c@subfigure=\count150
+\c@lofdepth=\count151
+\c@subtable=\count152
+\c@lotdepth=\count153
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip97
+\subfig@bottom=\skip98
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2015/08/03 3.9m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2015/08/03 3.9m Babel common definitions
+\babel@savecnt=\count154
+\U@D=\dimen211
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+\c@blindtext=\count155
+\c@Blindtext=\count156
+\c@blind@countparstart=\count157
+\blind@countxx=\count158
+\blindtext@numBlindtext=\count159
+\blind@countyy=\count160
+\c@blindlist=\count161
+\c@blindlistlevel=\count162
+\c@blindlist@level=\count163
+\blind@listitem=\count164
+\c@blind@listcount=\count165
+\c@blind@levelcount=\count166
+\blind@mathformula=\count167
+\blind@Mathformula=\count168
+\c@blind@randomcount=\count169
+\c@blind@randommax=\count170
+\c@blind@pangramcount=\count171
+\c@blind@pangrammax=\count172
+) (tikz-uml.sty
+Package: tikz-uml 2011/01/26
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
+\@xs@message=\write4
+\integerpart=\count173
+\decimalpart=\count174
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pgfopts\pgfopts.sty"
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks41
+\pgfopts@list@add@b@toks=\toks42
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex"
+File: tikzlibrarybackgrounds.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.3)
+\pgf@layerbox@background=\box56
+\pgf@layerboxsaved@background=\box57
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex"
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\pgflibraryarrows.code.tex"
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen212
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.code.tex"
+File: tikzlibraryshapes.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex"
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex"
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.misc.code.tex"
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.misc.code.tex"
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.symbols.code.tex"
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.symbols.code.tex"
+File: pgflibraryshapes.symbols.code.tex 2013/09/11 v3.0.1a (rcs-revision 1.6)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.arrows.code.tex"
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.arrows.code.tex"
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.callouts.code.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.callouts.code.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.multipart.code.tex"
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\shapes\pgflibraryshapes.multipart.code.tex"
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box58
+\pgfnodeparttwobox=\box59
+\pgfnodepartthreebox=\box60
+\pgfnodepartfourbox=\box61
+\pgfnodeparttwentybox=\box62
+\pgfnodepartnineteenbox=\box63
+\pgfnodeparteighteenbox=\box64
+\pgfnodepartseventeenbox=\box65
+\pgfnodepartsixteenbox=\box66
+\pgfnodepartfifteenbox=\box67
+\pgfnodepartfourteenbox=\box68
+\pgfnodepartthirteenbox=\box69
+\pgfnodeparttwelvebox=\box70
+\pgfnodepartelevenbox=\box71
+\pgfnodeparttenbox=\box72
+\pgfnodepartninebox=\box73
+\pgfnodeparteightbox=\box74
+\pgfnodepartsevenbox=\box75
+\pgfnodepartsixbox=\box76
+\pgfnodepartfivebox=\box77
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfit.code.tex"
+File: tikzlibraryfit.code.tex 2013/07/12 v3.0.1a (rcs-revision 1.5)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshadows.code.tex"
+File: tikzlibraryshadows.code.tex 2008/01/13 v3.0.1a (rcs-revision 1.3)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.markings.code.te
+x" ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.markings.code.tex"))
+\c@tikzumlPackageLayers=\count175
+\pgf@layerbox@package0=\box78
+\pgf@layerboxsaved@package0=\box79
+\pgf@layerbox@package1=\box80
+\pgf@layerboxsaved@package1=\box81
+\pgf@layerbox@package2=\box82
+\pgf@layerboxsaved@package2=\box83
+\pgf@layerbox@package3=\box84
+\pgf@layerboxsaved@package3=\box85
+\c@tikzumlFragmentLayers=\count176
+\pgf@layerbox@fragment0=\box86
+\pgf@layerboxsaved@fragment0=\box87
+\pgf@layerbox@fragment1=\box88
+\pgf@layerboxsaved@fragment1=\box89
+\pgf@layerbox@fragment2=\box90
+\pgf@layerboxsaved@fragment2=\box91
+\pgf@layerbox@fragment3=\box92
+\pgf@layerboxsaved@fragment3=\box93
+\c@tikzumlStateLayers=\count177
+\pgf@layerbox@state0=\box94
+\pgf@layerboxsaved@state0=\box95
+\pgf@layerbox@state1=\box96
+\pgf@layerboxsaved@state1=\box97
+\pgf@layerbox@state2=\box98
+\pgf@layerboxsaved@state2=\box99
+\pgf@layerbox@state3=\box100
+\pgf@layerboxsaved@state3=\box101
+\c@tikzumlComponentLayers=\count178
+\pgf@layerbox@component0=\box102
+\pgf@layerboxsaved@component0=\box103
+\pgf@layerbox@component1=\box104
+\pgf@layerboxsaved@component1=\box105
+\pgf@layerbox@component2=\box106
+\pgf@layerboxsaved@component2=\box107
+\pgf@layerbox@component3=\box108
+\pgf@layerboxsaved@component3=\box109
+\pgf@layerbox@lifelines=\box110
+\pgf@layerboxsaved@lifelines=\box111
+\pgf@layerbox@activity=\box112
+\pgf@layerboxsaved@activity=\box113
+\pgf@layerbox@connections=\box114
+\pgf@layerboxsaved@connections=\box115
+\c@tikzumlPackageClassNum=\count179
+\c@tikzumlPackageSubPackageNum=\count180
+\c@tikzumlRelationNum=\count181
+\c@tikzumlNoteNum=\count182
+\c@pos=\count183
+\c@posT=\count184
+\c@posStereo=\count185
+\c@tikzumlPackageLevel=\count186
+\c@tikzumlSystemUseCaseNum=\count187
+\c@tikzumlSystemLevel=\count188
+\c@tikzumlUseCaseNum=\count189
+\c@tikzumlActorNum=\count190
+\c@tikzumlStateJoinNum=\count191
+\c@tikzumlStateDecisionNum=\count192
+\c@tikzumlStateInitialNum=\count193
+\c@tikzumlStateFinalNum=\count194
+\c@tikzumlStateEnterNum=\count195
+\c@tikzumlStateExitNum=\count196
+\c@tikzumlStateEndNum=\count197
+\c@tikzumlStateHistoryNum=\count198
+\c@tikzumlStateDeepHistoryNum=\count199
+\c@tikzumlStateLevel=\count200
+\c@tikzumlStateSubStateNum=\count201
+\c@tikzumlStateText=\count202
+\c@tikzumlObjectNum=\count203
+\c@tikzumlCallLevel=\count204
+\c@tikzumlCallNum=\count205
+\c@tikzumlFragmentLevel=\count206
+\c@tikzumlFragmentLevelNum=\count207
+\c@tikzumlFragmentNum=\count208
+\c@tikzumlFragmentPartNum=\count209
+\c@tikzumlCallStartFragmentNum=\count210
+\c@tikzumlCallEndFragmentNum=\count211
+\tikzumlCall@xa=\skip99
+\tikzumlCall@xb=\skip100
+\c@tikzumlComponentLevel=\count212
+\c@tikzumlComponentSubComponentNum=\count213
+\c@tikzumlConnectorNum=\count214
+\tikzuml@AC@xa=\skip101
+\tikzuml@AC@ya=\skip102
+\tikzuml@AC@xb=\skip103
+\tikzuml@AC@yb=\skip104
+\tikzuml@AC@xi=\skip105
+\tikzuml@AC@yi=\skip106
+\tikzuml@AC@xic=\skip107
+\tikzuml@AC@yic=\skip108
+\tikzuml@AC@xio=\skip109
+\tikzuml@AC@yio=\skip110
+\tikzuml@AC@AB=\skip111
+\tikzuml@AC@lambda=\skip112
+\tikzuml@AC@xtrc=\skip113
+\tikzuml@AC@ytrc=\skip114
+\tikzuml@AC@xtlc=\skip115
+\tikzuml@AC@ytlc=\skip116
+\tikzuml@AC@xblc=\skip117
+\tikzuml@AC@yblc=\skip118
+\tikzuml@AC@xbrc=\skip119
+\tikzuml@AC@ybrc=\skip120
+\tikzuml@AC@middleArm=\skip121
+) (conference_poster_3.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 86.
+LaTeX Font Info:    ... okay on input line 86.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen190
-\scratchbox=\box44
-\nofMPsegments=\count127
-\nofMParguments=\count128
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen191
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count215
+\scratchdimen=\dimen213
+\scratchbox=\box116
+\nofMPsegments=\count216
+\nofMParguments=\count217
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count218
+\MPscratchDim=\dimen214
+\MPnumerator=\count219
+\makeMPintoPDFobject=\count220
+\everyMPtoPDFconversion=\toks44
 ) ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -557,108 +964,112 @@ LaTeX Font Info:    ... okay on input line 37.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count221
 <figures/background.pdf, id=28, 963.6pt x 542.025pt>
 File: figures/background.pdf Graphic file (type pdf)
  <use figures/background.pdf>
-Package pdftex.def Info: figures/background.pdf used on input line 69.
+Package pdftex.def Info: figures/background.pdf used on input line 118.
 (pdftex.def)             Requested size: 1886.30533pt x 1061.00107pt.
 
 <figures/logo.png, id=29, 156.585pt x 62.634pt>
 File: figures/logo.png Graphic file (type png)
  <use figures/logo.png>
-Package pdftex.def Info: figures/logo.png used on input line 69.
+Package pdftex.def Info: figures/logo.png used on input line 118.
 (pdftex.def)             Requested size: 156.58461pt x 62.63383pt.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 69.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 118.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 69.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 118.
 
-Underfull \hbox (badness 1377) in paragraph at lines 80--80
-[]\T1/cmr/m/n/10 Maecenas plac-erat hen-drerit mol-lis. Nunc
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 118.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 129.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 130.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+<figures/architecture.png, id=32, 380.92313pt x 368.87813pt>
+File: figures/architecture.png Graphic file (type png)
+ <use figures/architecture.png>
+Package pdftex.def Info: figures/architecture.png used on input line 155.
+(pdftex.def)             Requested size: 165.54208pt x 160.30309pt.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+ (conference_poster_3.bbl)
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
  []
 
+<figures/impact.png, id=34, 437.38406pt x 256.70906pt>
+File: figures/impact.png Graphic file (type png)
+ <use figures/impact.png>
+Package pdftex.def Info: figures/impact.png used on input line 275.
+(pdftex.def)             Requested size: 303.69283pt x 178.24579pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-(conference_poster_3.bbl)
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 2050) in paragraph at lines 136--136
-\T1/cmr/m/n/8 sociis na-toque pe-nat-i-bus et mag-nis dis par-turi-ent
- []
-
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-<figures/placeholder.jpg, id=32, 351.3125pt x 193.72375pt>
-File: figures/placeholder.jpg Graphic file (type jpg)
- <use figures/placeholder.jpg>
-Package pdftex.def Info: figures/placeholder.jpg used on input line 192.
-(pdftex.def)             Requested size: 212.58829pt x 117.23131pt.
-File: figures/placeholder.jpg Graphic file (type jpg)
- <use figures/placeholder.jpg>
-Package pdftex.def Info: figures/placeholder.jpg used on input line 192.
-(pdftex.def)             Requested size: 212.58829pt x 117.23131pt.
-File: figures/placeholder.jpg Graphic file (type jpg)
-
-<use figures/placeholder.jpg>
-Package pdftex.def Info: figures/placeholder.jpg used on input line 192.
-(pdftex.def)             Requested size: 347.08034pt x 191.40576pt.
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-Missing character: There is no ; in font nullfont!
-
-Overfull \hbox (2.22534pt too wide) in paragraph at lines 69--196
+Overfull \hbox (2.22534pt too wide) in paragraph at lines 118--329
 [][]  [] 
  []
 
 [2
 
 {C:/Users/David/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/background.pdf> <./figures/logo.png> <./fi
-gures/placeholder.jpg>] (conference_poster_3.aux)
+gures/architecture.png> <./figures/impact.png>] (conference_poster_3.aux) )
+(\end occurred inside a group at level 1)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+### simple group (level 1) entered at line 1061 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 15191 strings out of 493673
- 319670 string characters out of 3141529
- 370881 words of memory out of 3000000
- 18265 multiletter control sequences out of 15000+200000
- 14249 words of font info for 28 fonts, out of 3000000 for 9000
+ 22784 strings out of 493673
+ 471667 string characters out of 3141529
+ 780816 words of memory out of 3000000
+ 25696 multiletter control sequences out of 15000+200000
+ 16261 words of font info for 37 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 62i,11n,92p,886b,956s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\David\AppData\Loca
-l\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx0900.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jk
-nappen\ec\dpi600\ecti0800.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <
-C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\David\AppData\Local\Mi
-KTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknapp
-en\ec\dpi600\ecrm1000.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\U
-sers\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\David\AppData\Local\MiKTeX
-\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecbx2488.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr7.pfb>
-Output written on conference_poster_3.pdf (1 page, 176428 bytes).
+ 62i,19n,92p,887b,6948s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\Davi
+d\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti0800.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\font
+s\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecbx0900.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt0800.pk> <C:\Users\David\Ap
+pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk
+\ljfour\jknappen\ec\dpi600\ecbx1000.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm
+1000.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\David\AppDat
+a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
+our\jknappen\ec\dpi600\ecrm1440.pk> <C:\Users\David\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488
+.pk>
+Output written on conference_poster_3.pdf (1 page, 173575 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
+ 411 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 135 words of extra memory for PDF output out of 10000 (max. 10000000)
 
