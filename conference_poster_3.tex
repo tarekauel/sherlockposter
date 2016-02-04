@@ -35,10 +35,17 @@
 \usepackage{subfigure}
 \usepackage[english]{babel}
 \usepackage{blindtext}
+\usepackage{pgfplots, pgfplotstable}
+\usepackage{microtype}
 
 \usepackage{tikz}
 \usepackage{tikz-uml}
 \tikzumlset{fill class=white}
+
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{makecell}
+\usetikzlibrary{arrows}
 
 
 \lstdefinelanguage{JavaScript}{
@@ -138,24 +145,42 @@ optimization: var a = [4, 3, 2, 1]
 \end{lstlisting}
 
 \end{tabular}
-\captionof{lstlisting}{Example for early property initializationn}
+\captionof{lstlisting}{Example for early property initialization}
 \label{list1}
 \end{center}
 
-The main goals of Sherlock are to find these opportunities for early property initialization and keep the number of false positives as low as possible at the same time. Due this, in some use cases Sherlock prefers not to optimizing a value instead of running in a potential false positive situation.
+The main goals of Sherlock are to find these opportunities for early property initialization and keep the number of false positives as low as possible at the same time. Due to this, in some use cases Sherlock prefers not to optimizing a value instead of running in a potential false positive situation.
 \end{posterbox}
 %----------------------------------------------------------------------------------------
 %	METHODS
 %----------------------------------------------------------------------------------------
 
-\begin{posterbox}[name=methods,column=0,below=introduction]{Methods}
-Overall \textbf{Sherlock is an implemented plugin for Jalangi}. Jalangi is a dynamic framework for JavaScript. By transforming the code and adding hooks, it allows the user to monitor almost every operation performed bythe execution. Sherlock overrides the API exposed by Jalangi in order to perform the desired dynamic analysis. Before the code is analyzed by Sherlock it is instrumented with a simple literal using Esprima, Estraverse and Escodegen in order to track the end of conditions. This is done, because it is not possible to track the end of conditions with Jalangi.
+\begin{posterbox}[name=methods,column=0,below=introduction]{Overview}
+Overall \textbf{Sherlock is an implemented plugin for Jalangi}. Jalangi is a dynamic framework for JavaScript. By transforming the code and adding hooks, it allows the user to monitor almost every operation performed by the execution. Sherlock implements the callbacks which called by Jalangi in order to perform the desired dynamic analysis. Before the code is analyzed by Sherlock it is instrumented using Esprima, Estraverse and Escodegen in order to be able to track events that are not exposed by Jalangi such as the end of a branch. This additions allows to safely optimize coding which could not have optimized otherwise.
 
 \begin{center}
-\includegraphics[width=0.8\linewidth]{architecture.png}
-\captionof{figure}{Architecture of Sherlock}
-\label{fig1}
-
+\adjustbox{width=6cm}{
+\begin{tikzpicture}[->,>=stealth',shorten >=0pt,auto,node distance=2cm,
+  thick,main node/.style={rectangle,draw,font=\sffamily\bfseries}, hidden node/.style={},
+  minimum width=4cm, minimum height=1.5cm]
+	\node[main node] (A) []{Test.js};
+	\node[main node] (B) [below of=A]{\makecell{Esprima, Estraverse\\and Escodegen}};
+	\node[main node] (C) [below of=B]{Test\_Instrumented.js};
+	\node[main node] (D) [below of=C]{Jalangi Framework};			
+	\node[main node, node distance=5.5cm, minimum width = 2cm] (E) [right of=D]{Sherlock.js};			
+	\node[main node] (F) [below of=D]{Optimization Proposals};					
+	
+	  \path[->,every node/.style={font=\sffamily\small}]
+	  (A) edge node[] {} (B)
+	  (B) edge node[] {} (C)
+	  (C) edge node[] {} (D)
+	  (E) edge node[above] {Plugin} (D)
+	  (D) edge node[] {} (F)	  	  	  	  	  
+	  ;
+\end{tikzpicture}
+}
+\captionof{figure}{Optimization process using Sherlock with Jalangi}
+\label{fig1}  
 \end{center}
 %
 %To track every object or array created during one execution, Sherlock uses a data structure called \textit{Reference}. One \textit{Reference} object may keep track of multiple references to one object/array. Furthermore Sherlock maintains some variables during the execution.
@@ -190,11 +215,11 @@ Overall \textbf{Sherlock is an implemented plugin for Jalangi}. Jalangi is a dyn
 %	RESULTS 
 %----------------------------------------------------------------------------------------
 
-\begin{posterbox}[name=results1,span=2,column=1,row=0]{Results} 
-Sherlock was evalutad with a set of self written test-cases. The results show Sherlock is able to detect different early property optimizations. Due the fact that one goal of Sherlock was to minimize the number of false positives as low as possible, there are some cases which Sherlock does not support.\\
+\begin{posterbox}[name=results1,span=2,column=1,row=0]{Sherlock} 
+Sherlock is constantly evaluated with a set of self written test-cases. The tests proves which potential optimizations Sherlock can identify. But nevertheless, Sherlock may skip potential optimizations if it either may not be safe to optimize the code or Sherlock does not recognize that it is possible, yet.\\
 
 \textbf{Supported early property optimizations} \\ 
-The cases which are fully supported by Sherlock are listed below in different code examples.
+The following listing shows two examples for coding that Sherlocks optimizes.
 
 \begin{center}
 \begin{tabular}{|c c |c }
@@ -214,11 +239,11 @@ a.reverse();
 \end{lstlisting} 
 \end{tabular}
 \setlength{\tabcolsep}{12em}
-\captionof{lstlisting}{Examples for a typical potential early property and array
+\captionof{lstlisting}{Examples for typical potential early property and array
 element initialization}
 \end{center}
 
-The left Example shows typical potential for early property and array element initilization which is covered by Sherlock. Sherlock is also able to optimize the JavaScript built in functions for arrays (right Example).
+The left example of Listing 2 shows a typical potential of early property and array element initialization which is covered by Sherlock. But Sherlock does not only optimize elements or properties that are set later, but also many builtin standard JavaScript functions. For the right example, Sherlock recognizes that the array could be initialized in reverse order.
 %In order to decide which built functions it can optimize, Sherlock divide the functions in four different groups.
 %
 %
@@ -230,8 +255,8 @@ The left Example shows typical potential for early property and array element in
 %\end{itemize}
 
 
-In the length example the only supported optimization would be made for \textit{a}. \textit{b} must not be optimized, because this would change the semantics. \textit{c}  and \textit{d} show two corner cases that are not supported, due it is very hard to distinguish \textit{c}  and \textit{d} using Jalangi.\\
-Conditioned initialization should only be done, if the scope does allow it. In the conditioned example only \textit{} can be optimized.
+In the left example of Listing 3 the only supported optimization would be made for \textit{a}. \textit{b} must not be optimized, because this would change the semantics (in particular the output of line $6$). \textit{c}  and \textit{d} show two corner cases that are not supported, because Sherlock cannot distinguish using Jalangi if the \textit{length} was used as index or as part of the assignment.\\
+Conditioned initialization should only be done, if the optimization is always true. In the conditioned example only \textit{b} can be optimized, because it is independent of the branching in line $2$. \textit{a} depends on \textit{cond} and must not be optimized
 
 \begin{center}
 \begin{tabular}{|l l |l }
@@ -263,19 +288,51 @@ if (cond) {
 \end{lstlisting} 
 \end{tabular}
 \setlength{\tabcolsep}{12em}
-\captionof{lstlisting}{Array.length and conditioned example}
+\captionof{lstlisting}{Examples for coding that can be optimized by Sherlock}
 \end{center}
 
-\textbf{Not supported early property optimizations} \\ 
-Some cases are not covered by Sherlock, due the fact that one of Sherlock's main goal is to keep the number of false positives as low as possible and to limit the scope of the tool. This includes objects that are created using a constructor or if a function is used in the initialization. The impact of optimization suggested by Sherlock can be seen in Figure ?.
+\textbf{Evaluation} \\ 
+Sherlock still misses some potential optimizations. So far Sherlock cannot deal with objects that are created by constructors, because this introduces many situations where Sherlock has to keep track of even more properties of the coding and where often Sherlock has to discard a optimization because it may change the logic, because of side effects or other reasons.
+
+The following figure shows the runtime difference of optimized and unoptimized array initializations. Even though Sherlock can inspect the Octane benchmarking suite, it does not find any optimization. The reason for that is the capabilities of Sherlock are still limited and that the benchmarks do not use plain objects or arrays. Especially they do not add elements within the same scope and they do not use builtin JavaScript functions that Sherlock can optimize.
 
 
  
 \begin{center}
-\includegraphics[width=0.7\linewidth]{impact.png}
-\captionof{figure}{Benchmark for simple array initialization. Array length is 100. }
-\end{center}
+\begin{tikzpicture}
+        \pgfplotsset{
+            scale only axis
+            }
+    \begin{axis}[    	   
+	   %ymin = 0,
+	   %ymax = 50,
+	   %xmin = 0,
+	   %xmax = 100,
+	   width=12cm,
+             height=5cm,
+	   xlabel=Array Size,
+            axis x line=bottom,
+            axis y line=left,
+%            enlarge x limits=0.1,
+            grid = major,
+            grid style={dashed, gray!30},
+            ylabel=Runtime in ms,
+            legend style={at={(0.1,-0.1)}, anchor=north},
+            bar shift=-7,
+            legend cell align=left,
+            legend entries={
+                Unoptimized,
+                Optimized},
+	       legend pos= north west
+         ]        
+        \addplot[color = black, dotted, ultra thick] table  {data1.txt};
+        \addplot[color = black, dashed, ultra thick] table  {data2.txt};        
+        
+                        
+    \end{axis}
+    \end{tikzpicture}
 
+\end{center}
 
 \end{posterbox}
 
@@ -284,7 +341,7 @@ Some cases are not covered by Sherlock, due the fact that one of Sherlock's main
 %----------------------------------------------------------------------------------------
 
 \begin{posterbox}[name=conclusion,span=2,column=1,below=results1]{Conclusion} 
-We introduced a new profiling tool to find opportunities for early property initialization, named Sherlock. While there is still a long way to go to find all possible early property optimizations our results show that Sherlock is able to find a broad range of them. Furthermore Sherlock should be able to check every JavaScript file provided to it. 
+We introduced a new profiling tool to find opportunities for early property initialization, named Sherlock. While there is still a long way to go to find all possible early property optimizations our results show that Sherlock is able to find a broad range of them.
 
 %
 %Nunc sit amet sem ut nulla tincidunt mattis vel nec mauris. Vestibulum odio tellus, lobortis. Vel adipiscing, Aliquam dictum, ligula egestas commodo posuere, lectus lectus congue ligula, sed posuere urna lectus at nisi. Aenean commodo risus ut dolor (viverra scelerisque). Nullam varius, lacus et interdum hendrerit, odio orci ultrices mauris, id interdum eros mauris at urna. Fusce in nisi eros, sit amet volutpat turpis, \textbf{porttior magna} (commodo blandit euismod) \textbf{facilisis ornate magnis} (dis magnis). 
@@ -317,11 +374,11 @@ We introduced a new profiling tool to find opportunities for early property init
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-\begin{posterbox}[name=acknowledgements,span=2,column=1,below=conclusion]{Acknowledgements}
+%\begin{posterbox}[name=acknowledgements,span=2,column=1,below=conclusion]{Acknowledgements}
 
-\smaller % Reduce the font size in this block
-Fusce mattis tellus ac odio imperdiet lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus commodo blandit euismod. Ut porttitor cursus magna.
-\end{posterbox}
+%\smaller % Reduce the font size in this block
+%Fusce mattis tellus ac odio imperdiet lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus commodo blandit euismod. Ut porttitor cursus magna.
+%\end{posterbox}
 
 
 %----------------------------------------------------------------------------------------
